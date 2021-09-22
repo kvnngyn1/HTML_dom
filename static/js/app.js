@@ -77,29 +77,29 @@ function getData(aList) {
             li.classList.remove('active');
         });
        
-
-
             // Mouse Click Event Listeners
             li.addEventListener('click', function () {
+                var li = document.getElementById("skill-list");
+                    li.innerHTML = ""
 
-                // console.log( person );
-                employeeName.innerText = `${person.firstName} ${person.lastName}`
-                employeeOccupation.innerText = `${person.occupation}`                
+                    // console.log( person );
+                    employeeName.innerText = `${person.firstName} ${person.lastName}`
+                    employeeOccupation.innerText = `${person.occupation}`                
 
-                for (const s in person.skills) {
-                    let li = document.createElement('li');
-                    li.innerText = `${s}: ${ person.skills[s] }`;
-                    li.setAttribute('class', 'list-group-item');
-                    skillList.appendChild(li);
+                    for (const s in person.skills) {
+                        let li = document.createElement('li');
+                        li.innerText = `${s}: ${ person.skills[s] }`;
+                        li.setAttribute('class', 'list-group-item');
+                        skillList.appendChild(li);
 
-                    // Leaving these cause i like how it hightlights over what i hover
-                    li.addEventListener('mouseenter', function () {
-                        li.classList.add('active');
-                    });
-                    li.addEventListener('mouseleave', function () {
-                        li.classList.remove('active');
-                    });
-                }    
+                        // Leaving these cause i like how it hightlights over what i hover
+                        li.addEventListener('mouseenter', function () {
+                            li.classList.add('active');
+                        });
+                        li.addEventListener('mouseleave', function () {
+                            li.classList.remove('active');
+                        });
+                    }    
 
             });
                     // li.addEventListener('mouseover', function () {
