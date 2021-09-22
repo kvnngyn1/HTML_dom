@@ -45,8 +45,6 @@ let employeeList = document.querySelector('#employee-list');
 // } );
 // console.log(employeeEl);
 
-
-
 let employeeName = document.getElementById('employee-name');
 let employeeOccupation = document.getElementById('employee-occupation')
 let skillList = document.getElementById('skill-list')
@@ -86,29 +84,36 @@ function getData(aList) {
 
                 // console.log( person );
                 employeeName.innerText = `${person.firstName} ${person.lastName}`
-                employeeOccupation.innerText = `${person.occupation}`
-                skillList.innerText = `${person.skillInfo}`
+                employeeOccupation.innerText = `${person.occupation}`                
+
+                for (const s in person.skills) {
+                    let li = document.createElement('li');
+                    li.innerText = `${s}: ${ person.skills[s] }`;
+                    li.setAttribute('class', 'list-group-item');
+                    skillList.appendChild(li);
+
+                    // Leaving these cause i like how it hightlights over what i hover
+                    li.addEventListener('mouseenter', function () {
+                        li.classList.add('active');
+                    });
+                    li.addEventListener('mouseleave', function () {
+                        li.classList.remove('active');
+                    });
+                }    
 
             });
                     // li.addEventListener('mouseover', function () {
                     //     li.classList.add('active');
                     // });
+                    //  or
+                    // li.classList.add('active', function(){ 
+
+                    // });
 
     }
 }
 
-// skillItems
-let skillItems = document.querySelector('#skill-items');
 
-let skillInfo = [ function() {
-    for (const s of bList) {
-        let li = document.createElement('li');
-        li.innerText = "skills";
-        li.setAttribute('class', 'list-group-item');
-        skillItems.appendChild(li);}
-
-    }
-    ];
 
 
 let employeesInfo = [];
