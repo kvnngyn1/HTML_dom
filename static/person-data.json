@@ -1,0 +1,114 @@
+{
+    "Programmer": [
+        {
+            "firstName": "Derek",
+            "lastName": "Hawkins",
+            "occupation": "Software Engineer",
+            "skills": {
+                "Python": 10,
+                "JavaScript": 9,
+                "PHP": 7
+            }
+        },
+        {
+            "firstName": "Kevin",
+            "lastName": "Nguyen",
+            "occupation": "Software Engineer",
+            "skills": {
+                "Python": 12,
+                "JavaScript": 32,
+                "PHP": 34
+            }
+        },
+        {
+            "firstName": "Daniel",
+            "lastName": "Stewart",
+            "occupation": "Software Developer",
+            "skills": {
+                "Python": 1,
+                "Java": 1,
+                "JavaScript": 1
+            }
+        },
+        {
+            "firstName": "Tony",
+            "lastName": "Turner",
+            "occupation": "Software Engineer",
+            "skills": {
+                "Python": 10,
+                "JavaScript": 15,
+                "PHP": 8
+            }
+        },
+        {
+            "firstName": "Brittany",
+            "lastName": "Jones",
+            "occupation": "Software Engineer",
+            "skills": {
+                "Python": 8,
+                "JavaScript": 3,
+                "PHP": 7
+            }
+        },
+        {
+            "firstName": "Tammie",
+            "lastName": "Hall",
+            "occupation": "Software Engineer",
+            "skills": {
+                "SQL": 4,
+                "JavaScript": 2,
+                "Autocad": 10
+            }
+        },
+        {
+            "firstName": "Natalia",
+            "lastName": "Eaton",
+            "occupation": "NOT a Software Engineer",
+            "skills": {
+                "Python": 1,
+                "JavaScript": 0.3,
+                "PHP": 0
+            }
+        },
+        {
+            "firstName": "Andrea",
+            "lastName": "Pirela",
+            "occupation": "Database Analyst",
+            "skills": {
+                "Python": 7,
+                "JavaScript": 6,
+                "SQL": 10
+            }
+        },
+        {
+            "firstName": "Aldrick",
+            "lastName": "Wright",
+            "occupation": "Software Developer",
+            "skills": {
+                "Python": 1,
+                "Java": 1,
+                "Javascript": 1
+            }
+        },
+        {
+            "firstName": "Vittorio",
+            "lastName": "Petrosino",
+            "occupation": "Software Engineer",
+            "skills": {
+                "Python": 5,
+                "JavaScript": 5,
+                "SQL": 3
+            }
+        },
+        {
+            "firstName": "Caleb",
+            "lastName": "Hubbs",
+            "occupation": "Software Engineer",
+            "skills": {
+                "Python": 6,
+                "JavaScript": 5,
+                "Flask": 3
+            }
+        }
+    ]
+}
